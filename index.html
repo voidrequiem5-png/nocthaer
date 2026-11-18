@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#07040d">
+<meta name="description" content="NOCTHAER — Au-delà des ténèbres, nous ne faisons qu'un. Communauté gaming.">
+<title>NOCTHAER — Enter the darkness</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700;800;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#07040d;--panel:#10091a;--purple:#a52cff;--pink:#ee63ff;--white:#f8f2ff;--muted:#b8a9c8;--line:#a52cff45}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:86px}body{margin:0;background:var(--bg);color:var(--white);font-family:Rajdhani,Arial,sans-serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;z-index:-2;background:radial-gradient(ellipse at 50% 12%,#46116a55,transparent 42%),radial-gradient(ellipse at 10% 75%,#40106b22,transparent 35%),linear-gradient(180deg,#07040d,#0b0612 55%,#07040d)}
+#stars{position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.65}
+a{color:inherit;text-decoration:none}.wrap{width:min(1160px,90%);margin:auto}
+header{position:fixed;z-index:20;top:0;width:100%;background:#08050edb;backdrop-filter:blur(16px);border-bottom:1px solid #a52cff36}
+.nav{height:78px;display:flex;align-items:center;justify-content:space-between}.brand{font:900 1.2rem Orbitron,sans-serif;letter-spacing:.16em;text-shadow:0 0 18px var(--purple)}
+.navlinks{display:flex;align-items:center;gap:27px}.navlinks a{font-weight:700;font-size:1.08rem;color:#d9cce5;transition:.2s}.navlinks a:hover,.navlinks a.active{color:#fff;text-shadow:0 0 14px var(--pink)}
+.nav-cta{border:1px solid #bd62ff;padding:9px 15px;border-radius:4px;color:white!important}.menu{display:none;background:none;border:1px solid #a52cff80;color:white;border-radius:7px;padding:8px 12px;font-size:1.2rem}
+.hero{min-height:100svh;display:grid;place-items:center;text-align:center;position:relative;padding:120px 0 72px;isolation:isolate}
+.hero:before{content:"";position:absolute;z-index:-1;width:min(760px,90vw);height:min(760px,90vw);border-radius:50%;background:#921cff20;filter:blur(100px)}
+.hero-inner{max-width:900px}.logo{width:min(455px,76vw);height:auto;filter:drop-shadow(0 0 25px #9824ff70);animation:levitate 6s ease-in-out infinite}
+@keyframes levitate{50%{transform:translateY(-9px)}}
+.kicker{font:700 .76rem Orbitron,sans-serif;letter-spacing:.34em;text-transform:uppercase;color:#d68bff;margin:5px 0 20px}
+h1{font:900 clamp(2.15rem,6.6vw,5rem)/1.08 Orbitron,sans-serif;letter-spacing:.045em;margin:0;text-shadow:0 0 34px #a52cff88}
+.hero-copy{font-size:clamp(1.2rem,2.4vw,1.55rem);color:#d7c9e4;margin:22px 0 30px}
+.actions{display:flex;justify-content:center;gap:14px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 24px;min-height:48px;border-radius:4px;font:800 .86rem Orbitron,sans-serif;letter-spacing:.055em;border:1px solid #a52cff;transition:transform .22s,box-shadow .22s,background .22s}
+.btn.primary{background:linear-gradient(110deg,#7013bd,#b52cff);box-shadow:0 0 25px #9c1cff55}.btn.secondary{background:#ffffff08}.btn:hover{transform:translateY(-3px);box-shadow:0 0 32px #a52cff88}
+.scroll-hint{margin-top:55px;color:#9c88ae;font:600 .66rem Orbitron,sans-serif;letter-spacing:.25em}.scroll-hint span{display:block;font-size:1.25rem;margin-top:7px;color:#cf8cff;animation:down 1.5s infinite}@keyframes down{50%{transform:translateY(6px)}}
+section{padding:100px 0;position:relative}.section-kicker{text-align:center;color:#c47aff;font:700 .72rem Orbitron,sans-serif;letter-spacing:.32em;text-transform:uppercase}
+h2{text-align:center;font:800 clamp(1.65rem,4vw,2.7rem) Orbitron,sans-serif;margin:13px 0 17px}.intro{max-width:680px;text-align:center;color:var(--muted);font-size:1.18rem;line-height:1.5;margin:0 auto 43px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{position:relative;overflow:hidden;min-height:220px;padding:29px;background:linear-gradient(145deg,#1b0e2add,#0d0814);border:1px solid var(--line);border-radius:8px;transition:.28s}
+.card:after{content:"";position:absolute;right:-65px;bottom:-95px;width:190px;height:190px;border-radius:50%;background:#a52cff28;filter:blur(38px);pointer-events:none}.card:hover{transform:translateY(-7px);border-color:#c77aff;box-shadow:0 14px 40px #7416b52b}
+.card-icon{font-size:1.8rem;color:#df9aff}.card h3{font:700 1.03rem Orbitron,sans-serif;margin:20px 0 10px}.card p{font-size:1.08rem;line-height:1.45;color:var(--muted);margin:0}
+.band{border-block:1px solid #a52cff36;background:linear-gradient(100deg,#1a0a2a,#0e0817 50%,#1a0a2a)}
+.band-inner{text-align:center}.band .intro{margin-bottom:28px}
+.pill-row{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin:0 auto 28px}.pill{font:700 .68rem Orbitron,sans-serif;letter-spacing:.1em;padding:9px 12px;border:1px solid #a52cff55;border-radius:3px;color:#d9b5f6;background:#a52cff0c}
+.join-panel{max-width:850px;margin:auto;padding:42px 24px;border:1px solid #a52cff60;border-radius:9px;background:radial-gradient(ellipse at 50% 0%,#8020ba2b,transparent 65%),#10091acc;box-shadow:0 0 55px #7416b51b;text-align:center}
+.join-panel h2{margin-top:0}.join-panel .intro{margin-bottom:25px}
+footer{padding:30px 0;text-align:center;border-top:1px solid #a52cff30;color:#8f7da0;font-size:.98rem}footer strong{font:800 .95rem Orbitron,sans-serif;letter-spacing:.17em;color:#e0c2fa}
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}.reveal.visible{opacity:1;transform:none}
+@media(max-width:780px){.menu{display:block}.navlinks{display:none;position:absolute;top:78px;left:0;right:0;padding:20px 5%;background:#0c0713;border-bottom:1px solid #a52cff55;flex-direction:column;align-items:stretch;gap:18px}.navlinks.open{display:flex}.navlinks a{padding:4px 0}.nav-cta{text-align:center}.cards{grid-template-columns:1fr}.hero{min-height:94svh}.logo{width:min(390px,84vw)}section{padding:78px 0}.scroll-hint{margin-top:40px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+
+.team-grid{grid-template-columns:repeat(3,1fr)}
+.team-card{min-height:255px}
+.team-top{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.team-logo{width:54px;height:54px;object-fit:contain;filter:drop-shadow(0 0 9px #a52cff75)}
+.game-tag{font:700 .58rem Orbitron,sans-serif;letter-spacing:.12em;color:#d7a0ff;border:1px solid #a52cff55;padding:7px 8px;border-radius:3px}
+.team-card h3{margin:19px 0 13px}
+.team-card .roster{font-size:1rem;margin:6px 0;color:#b8a9c8}
+.team-card .roster strong{color:#f1e4ff}
+.team-status{display:inline-block;margin-top:15px;font:700 .57rem Orbitron,sans-serif;letter-spacing:.1em;color:#d99cff}
+@media(max-width:780px){.team-grid{grid-template-columns:1fr}}
+
+
+.recruit-grid{grid-template-columns:repeat(3,1fr)}
+.recruit-card{min-height:205px}
+.recruit-card h3{margin:18px 0 9px}
+.recruit-card p{font-size:1.02rem;color:#c5b4d3;margin:0 0 18px}
+.recruit-link{display:inline-block;color:#e0b5ff;font:700 .65rem Orbitron,sans-serif;letter-spacing:.08em;border-bottom:1px solid #b65aff;padding-bottom:5px}
+.recruit-link:hover{color:white;text-shadow:0 0 12px #c45aff}
+.recruit-note{text-align:center;color:#9f8cad;font-size:1rem;margin:28px auto 0;max-width:700px}
+@media(max-width:780px){.recruit-grid{grid-template-columns:1fr}}
+
+</style>
+</head>
+<body>
+<canvas id="stars" aria-hidden="true"></canvas>
+<header><div class="wrap nav">
+<a class="brand" href="#accueil">NOCTHAER</a>
+<button class="menu" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+<nav class="navlinks" aria-label="Navigation principale">
+<a href="#accueil">Accueil</a><a href="#equipes">Équipes</a><a href="#twitch">Twitch</a><a href="#communaute">Communauté</a><a href="#esport">Projet e-sport</a><a href="#recrutement">Recrutement</a><a class="nav-cta" href="#contact">Rejoindre NOCTHAER</a>
+</nav></div></header>
+<main>
+<section class="hero" id="accueil"><div class="wrap hero-inner">
+<img class="logo" src="assets/nocthaer-logo.png" alt="Emblème NOCTHAER violet et noir">
+<p class="kicker">Gaming community · Enter the darkness</p>
+<h1>LE SILENCE AVANT<br>LA TEMPÊTE.</h1>
+<p class="hero-copy">Au-delà des ténèbres, nous ne faisons qu'un.</p>
+<div class="actions"><a class="btn primary" href="https://www.discord.com/dTkE42cMPk" target="_blank" rel="noopener">REJOINDRE LE DISCORD ↗</a><a class="btn secondary" href="https://www.twitch.tv/nocthaer" target="_blank" rel="noopener">DÉCOUVRIR TWITCH ↗</a></div>
+<div class="scroll-hint">DÉCOUVRIR L'UNIVERS<span>⌄</span></div>
+</div></section>
+<section id="equipes"><div class="wrap">
+<p class="section-kicker reveal">Nos divisions compétitives</p><h2 class="reveal">LES ÉQUIPES NOCTHAER</h2>
+<p class="intro reveal">Cinq univers, un même emblème. Les rosters et capitaines seront annoncés prochainement.</p>
+<div class="cards team-grid">
+<article class="card reveal team-card"><div class="team-top"><span class="game-tag">FPS TACTIQUE</span><img src="assets/nocthaer-logo.png" alt="Logo NOCTHAER" class="team-logo"></div><h3>VALORANT</h3><p class="roster"><strong>Joueurs :</strong> En attente</p><p class="roster"><strong>Capitaine :</strong> En attente</p><span class="team-status">ROSTER EN CONSTRUCTION</span></article>
+<article class="card reveal team-card"><div class="team-top"><span class="game-tag">SPORT AUTOMOBILE</span><img src="assets/nocthaer-logo.png" alt="Logo NOCTHAER" class="team-logo"></div><h3>ROCKET LEAGUE</h3><p class="roster"><strong>Joueurs :</strong> En attente</p><p class="roster"><strong>Capitaine :</strong> En attente</p><span class="team-status">ROSTER EN CONSTRUCTION</span></article>
+<article class="card reveal team-card"><div class="team-top"><span class="game-tag">FPS EN ÉQUIPE</span><img src="assets/nocthaer-logo.png" alt="Logo NOCTHAER" class="team-logo"></div><h3>OVERWATCH</h3><p class="roster"><strong>Joueurs :</strong> En attente</p><p class="roster"><strong>Capitaine :</strong> En attente</p><span class="team-status">ROSTER EN CONSTRUCTION</span></article>
+<article class="card reveal team-card"><div class="team-top"><span class="game-tag">STRATÉGIE</span><img src="assets/nocthaer-logo.png" alt="Logo NOCTHAER" class="team-logo"></div><h3>CLASH OF CLANS</h3><p class="roster"><strong>Joueur :</strong> En attente</p><p class="roster"><strong>Capitaine :</strong> En attente</p><span class="team-status">ROSTER EN CONSTRUCTION</span></article>
+<article class="card reveal team-card"><div class="team-top"><span class="game-tag">MMORPG</span><img src="assets/nocthaer-logo.png" alt="Logo NOCTHAER" class="team-logo"></div><h3>DOFUS</h3><p class="roster"><strong>Joueurs :</strong> En attente</p><p class="roster"><strong>Capitaine :</strong> En attente</p><span class="team-status">ROSTER EN CONSTRUCTION</span></article>
+</div></div></section>
+<section class="band" id="twitch"><div class="wrap band-inner reveal">
+<p class="section-kicker">En direct des ombres</p><h2>NOCTHAER SUR TWITCH</h2>
+<p class="intro">Retrouve la chaîne, suis les lives et partage les prochains moments forts de la communauté.</p>
+<div class="pill-row"><span class="pill">LIVE</span><span class="pill">GAMING</span><span class="pill">COMMUNAUTÉ</span></div>
+<a class="btn primary" href="https://www.twitch.tv/nocthaer" target="_blank" rel="noopener">OUVRIR LA CHAÎNE TWITCH ↗</a>
+</div></section>
+<section id="communaute"><div class="wrap reveal">
+<p class="section-kicker">Plus forts ensemble</p><h2>LA COMMUNAUTÉ NOCTHAER</h2>
+<p class="intro">Les ténèbres sont plus lumineuses quand on les traverse ensemble. Rejoins le serveur pour discuter, jouer et suivre les actualités.</p>
+<div style="text-align:center"><a class="btn primary" href="https://www.discord.com/dTkE42cMPk" target="_blank" rel="noopener">ENTRER DANS LE DISCORD ↗</a></div>
+</div></section>
+<section class="band" id="esport"><div class="wrap band-inner reveal">
+<p class="section-kicker">Notre ambition</p><h2>UNE STRUCTURE. CINQ DIVISIONS. UN MÊME OBJECTIF.</h2>
+<p class="intro">NOCTHAER veut se développer comme une structure e-sport organisée : des équipes encadrées par leurs capitaines, des entraînements, des tournois et une progression vers les compétitions officielles.</p>
+<div class="cards">
+<article class="card"><div class="card-icon">♛</div><h3>ENCADREMENT</h3><p>Chaque division aura son capitaine pour coordonner les joueurs et faire vivre l'équipe.</p></article>
+<article class="card"><div class="card-icon">⚔</div><h3>TOURNOIS</h3><p>Construire des équipes, participer à des événements et se mesurer à d'autres communautés.</p></article>
+<article class="card"><div class="card-icon">✦</div><h3>COMPÉTITIONS</h3><p>Progresser étape par étape vers les circuits et compétitions officielles adaptés à chaque jeu.</p></article>
+</div>
+</div></section>
+<section id="recrutement"><div class="wrap">
+<p class="section-kicker reveal">Les portes sont ouvertes</p>
+<h2 class="reveal">RECRUTEMENT OUVERT</h2>
+<p class="intro reveal">Tous les niveaux sont les bienvenus : débutant, intermédiaire ou compétitif. Chaque division aura son propre capitaine. Choisis ton jeu et contacte-nous sur Discord pour présenter ta candidature.</p>
+<div class="cards recruit-grid">
+<article class="card reveal recruit-card"><span class="game-tag">FPS TACTIQUE</span><h3>VALORANT</h3><p>Débutant · Intermédiaire · Compétitif</p><p><strong>Capitaine :</strong> poste à pourvoir</p><a class="recruit-link" href="https://www.discord.com/dTkE42cMPk" target="_blank" rel="noopener">CANDIDATER SUR DISCORD ↗</a></article>
+<article class="card reveal recruit-card"><span class="game-tag">SPORT AUTOMOBILE</span><h3>ROCKET LEAGUE</h3><p>Débutant · Intermédiaire · Compétitif</p><p><strong>Capitaine :</strong> poste à pourvoir</p><a class="recruit-link" href="https://www.discord.com/dTkE42cMPk" target="_blank" rel="noopener">CANDIDATER SUR DISCORD ↗</a></article>
+<article class="card reveal recruit-card"><span class="game-tag">FPS EN ÉQUIPE</span><h3>OVERWATCH</h3><p>Débutant · Intermédiaire · Compétitif</p><p><strong>Capitaine :</strong> poste à pourvoir</p><a class="recruit-link" href="https://www.discord.com/dTkE42cMPk" target="_blank" rel="noopener">CANDIDATER SUR DISCORD ↗</a></article>
+<article class="card reveal recruit-card"><span class="game-tag">STRATÉGIE</span><h3>CLASH OF CLANS</h3><p>Débutant · Intermédiaire · Compétitif</p><p><strong>Capitaine :</strong> poste à pourvoir</p><a class="recruit-link" href="https://www.discord.com/dTkE42cMPk" target="_blank" rel="noopener">CANDIDATER SUR DISCORD ↗</a></article>
+<article class="card reveal recruit-card"><span class="game-tag">MMORPG</span><h3>DOFUS</h3><p>Débutant · Intermédiaire · Compétitif</p><p><strong>Capitaine :</strong> poste à pourvoir</p><a class="recruit-link" href="https://www.discord.com/dTkE42cMPk" target="_blank" rel="noopener">CANDIDATER SUR DISCORD ↗</a></article>
+</div>
+<p class="recruit-note reveal">Les candidatures sont à présenter directement sur notre serveur Discord. Chaque équipe recrutera son capitaine et ses joueurs. Les participations aux tournois et compétitions seront annoncées au fur et à mesure de la structuration des divisions.</p>
+</div></section>
+<section id="contact"><div class="wrap"><div class="join-panel reveal">
+<p class="section-kicker">Le prochain chapitre commence ici</p><h2>TA PLACE EST PEUT-ÊTRE PARMI NOUS.</h2>
+<p class="intro">Envie de rejoindre l'aventure, de participer aux projets ou simplement de rencontrer la communauté ? Viens nous parler sur Discord.</p>
+<a class="btn primary" href="https://www.discord.com/dTkE42cMPk" target="_blank" rel="noopener">REJOINDRE NOCTHAER ↗</a>
+</div></div></section>
+</main>
+<footer><div class="wrap"><strong>NOCTHAER</strong><br>Au-delà des ténèbres, nous ne faisons qu'un.<br>© <span id="year"></span> NOCTHAER · Tous droits réservés.</div></footer>
+<script>
+const menuButton=document.querySelector('.menu'),nav=document.querySelector('.navlinks');
+menuButton.addEventListener('click',()=>{const opened=nav.classList.toggle('open');menuButton.setAttribute('aria-expanded',String(opened));});
+nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');menuButton.setAttribute('aria-expanded','false');}));
+document.getElementById('year').textContent=new Date().getFullYear();
+const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target);}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+const canvas=document.getElementById('stars'),ctx=canvas.getContext('2d');let particles=[];
+function resize(){const dpr=Math.min(devicePixelRatio||1,2);canvas.width=innerWidth*dpr;canvas.height=innerHeight*dpr;canvas.style.width=innerWidth+'px';canvas.style.height=innerHeight+'px';ctx.setTransform(dpr,0,0,dpr,0,0);particles=Array.from({length:Math.min(85,Math.floor(innerWidth/15))},()=>({x:Math.random()*innerWidth,y:Math.random()*innerHeight,r:Math.random()*1.5+.35,v:Math.random()*.24+.06,a:Math.random()*.55+.15}));}
+function animate(){ctx.clearRect(0,0,innerWidth,innerHeight);for(const p of particles){p.y-=p.v;if(p.y<0){p.y=innerHeight;p.x=Math.random()*innerWidth;}ctx.beginPath();ctx.arc(p.x,p.y,p.r,0,Math.PI*2);ctx.fillStyle=`rgba(202,132,255,${p.a})`;ctx.fill();}requestAnimationFrame(animate);}
+if(!matchMedia('(prefers-reduced-motion: reduce)').matches){resize();animate();addEventListener('resize',resize);}
+</script>
+</body></html>
